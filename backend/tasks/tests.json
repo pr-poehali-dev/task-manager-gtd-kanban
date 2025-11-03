@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Unauthorized request returns 401",
+      "method": "GET",
+      "path": "/?resource=tasks",
+      "expectedStatus": 401,
+      "expectedBody": {
+        "error": "Unauthorized"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
